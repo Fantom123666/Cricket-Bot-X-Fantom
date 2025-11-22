@@ -17,9 +17,11 @@ def load_handlers():
             module_name = f"{handlers_dir}.{filename[:-3]}"
             try:
                 importlib.import_module(module_name)
+
                 print(f"✅ Loaded: {filename}")
-            except Exception as e:
-                print(f"❌ Failed to load {filename}: {e}")
+ except Exception as e:
+    print(f"⚠️ Failed to set commands: {e}")
+
 
 async def start_bot():
     print("-----------------------------------------")
