@@ -1,8 +1,7 @@
 # main.py
 import importlib
 import os
-import asyncio
-from pyrogram import idle
+import asyncio
 from pyrogram.types import BotCommand
 from config import app
 
@@ -108,11 +107,10 @@ async def start_bot():
     except Exception as e:
         print(f"⚠️ Failed to set commands: {e}")
 
-    # 4. Bot ko chalne dein (Idle)
-    print("🤖 Bot is now running... (Press CTRL+C to stop)")
-    await idle()
+        print("🤖 Bot is now running... (Press CTRL+C to stop)")
     
-    # 5. Stop hone par
+    # No need for idle()
+    
     await app.stop()
     print("🛑 Bot Stopped.")
 
