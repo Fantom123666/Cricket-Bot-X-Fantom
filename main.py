@@ -107,7 +107,8 @@ async def start_bot():
         
 
     except Exception as e:
-    print(f"⚠️ Failed to set commands: {e}")
+    
+    print(f"Failed to set commands: {e}")
 
 print("🤖 Bot is now running... (Press CTRL+C to stop)")
 
