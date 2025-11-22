@@ -105,9 +105,11 @@ async def start_bot():
         ])
         print("✅ All User Features Added to Menu!")
     except Exception as e:
-        print(f"⚠️ Failed to set commands: {e}")
+    print(f"⚠️ Failed to set commands: {e}")
 
-        print("🤖 Bot is now running... (Press CTRL+C to stop)")
+print("🤖 Bot is now running... (Press CTRL+C to stop)")
+
+await asyncio.Event().wait()
     
 if __name__ == "__main__":
     # Asyncio loop chalayenge
