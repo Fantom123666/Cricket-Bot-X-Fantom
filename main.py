@@ -109,11 +109,6 @@ async def start_bot():
 
         print("🤖 Bot is now running... (Press CTRL+C to stop)")
     
-    # No need for idle()
-    
-    await app.stop()
-    print("🛑 Bot Stopped.")
-
 if __name__ == "__main__":
     # Asyncio loop chalayenge
     try:
