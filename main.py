@@ -65,7 +65,7 @@ async def start_bot():
             BotCommand("balance", "💳 Check Balance"),
             
             # Banking
-            BotCommand("bank", "🏦 Waifu Bank"),
+            BotCommand("bank", "🏦 Players Bank"),
             BotCommand("atmcard", "💳 Buy ATM Card"),
             BotCommand("atmmachine", "🏧 Withdraw Cash"),
             BotCommand("loan", "💸 Apply Loan"),
@@ -85,7 +85,7 @@ async def start_bot():
             
             # Relationships
             BotCommand("propose", "💍 Propose Waifu"),
-            BotCommand("marry", "💒 Marry Waifu"),
+            BotCommand("marry", "💒 Marry players),
             BotCommand("divorce", "💔 Breakup"),
             BotCommand("affection", "💗 Increase Bond"),
             
