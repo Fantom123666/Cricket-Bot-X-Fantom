@@ -26,10 +26,10 @@ async def start_bot():
     print("-----------------------------------------")
     print("   🚀 Starting CricketBot... ")
     print("-----------------------------------------")
-    
+
     # 1. Handlers load karein
     load_handlers()
-    
+
     # 2. Bot Start karein
     await app.start()
     print("✅ Bot Connected to Telegram!")
@@ -42,20 +42,20 @@ async def start_bot():
             BotCommand("start", "🎮 Start Journey"),
             BotCommand("help", "📚 Command List"),
             BotCommand("id", "🆔 User/Chat ID"),
-            
+
             # Profile & Collection
             BotCommand("profile", "👤 Check Profile"),
             BotCommand("inventory", "🎒 Your Cards"),
             BotCommand("wmode", "⚙️ Sort Inventory"),
             BotCommand("partner", "💞 View Partner"),
             BotCommand("fav", "❤️ Set Favorite"),
-            
+
             # Collecting
             BotCommand("claim", "🎲 Daily Summon"),
             BotCommand("collect", "grab dropped card"),
             BotCommand("search", "🔍 Search Card"),
             BotCommand("checkwaifu", "📄 Card Details"),
-            
+
             # Rewards & Economy
             BotCommand("daily", "💰 Daily Reward"),
             BotCommand("weekly", "🎁 Weekly Reward"),
@@ -63,13 +63,13 @@ async def start_bot():
             BotCommand("bonus", "💎 Bonus Reward"),
             BotCommand("redeem", "🎟 Redeem Code"),
             BotCommand("balance", "💳 Check Balance"),
-            
+
             # Banking
             BotCommand("bank", "🏦 Players Bank"),
             BotCommand("atmcard", "💳 Buy ATM Card"),
             BotCommand("atmmachine", "🏧 Withdraw Cash"),
             BotCommand("loan", "💸 Apply Loan"),
-            
+
             # Market & Trading
             BotCommand("mymarket", "🛒 Buying Market"),
             BotCommand("buy", "🛍 Buy Card"),
@@ -77,18 +77,18 @@ async def start_bot():
             BotCommand("gift", "🎁 Gift Card"),
             BotCommand("auction", "🔨 Start Auction"),
             BotCommand("bid", "🙋‍♂️ Place Bid"),
-            
+
             # Clan System
             BotCommand("myclan", "🏯 Clan Info"),
             BotCommand("createclan", "⚔️ Create Clan"),
             BotCommand("clantop", "🏆 Top Clans"),
-            
+
             # Relationships
             BotCommand("propose", "💍 Propose Waifu"),
             BotCommand("marry", "💒 Marry players),
             BotCommand("divorce", "💔 Breakup"),
             BotCommand("affection", "💗 Increase Bond"),
-            
+
             # Mini Games (Earning)
             BotCommand("bet", "🎰 Betting"),
             BotCommand("toss", "🪙 Coin Toss"),
@@ -96,6 +96,9 @@ async def start_bot():
             BotCommand("basket", "🏀 Basketball"),
             BotCommand("football", "⚽ Football"),
             
+            # Admins
+            BotCommand("addplayer", "Add players"),
+
             # Stats & Info
             BotCommand("top", "🌍 Global Top"),
             BotCommand("ctop", "💎 Richest Users"),
@@ -111,7 +114,7 @@ async def start_bot():
     # 4. Bot ko chalne dein (Idle)
     print("🤖 Bot is now running... (Press CTRL+C to stop)")
     await idle()
-    
+
     # 5. Stop hone par
     await app.stop()
     print("🛑 Bot Stopped.")
@@ -123,4 +126,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         pass
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"❌ Error: {e}")  
