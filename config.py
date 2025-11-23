@@ -13,7 +13,7 @@ class Config:
 
     # Owner & Support details
     OWNER_ID = 7558715645
-    ADMINS = [6398668820, 8145220564]
+    ADMINS = [6398668820, 8145220564, 8129006359]
     OWNER_USERNAME = "@Imfantommmm"
     SUPPORT_GROUP = "https://t.me/suppofcollectyourcrickers"
     SUPPORT_CHAT_ID = -1003314061685  # Group chat ID for logging & notifications
