@@ -85,7 +85,7 @@ async def start_bot():
 
             # Relationships
             BotCommand("propose", "💍 Propose Waifu"),
-            BotCommand("marry", "💒 Marry players),
+            BotCommand("marry", "💒 Marry players"),
             BotCommand("divorce", "💔 Breakup"),
             BotCommand("affection", "💗 Increase Bond"),
 
